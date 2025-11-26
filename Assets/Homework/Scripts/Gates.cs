@@ -1,18 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Gates : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private int score = 0;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        // Проверяем, что это мяч по компоненту Ball
+        if (other.GetComponent<Ball>() != null)
+        {
+            // Уничтожаем мяч
+            Destroy(other.gameObject);
+
+            // Увеличиваем счёт
+            score++;
+
+            // Выводим счёт в консоль
+            Debug.Log($"Goal! Score: {score}");
+        }
     }
 }

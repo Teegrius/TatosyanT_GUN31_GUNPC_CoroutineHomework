@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Mover : MonoBehaviour
+public class Mover2 : MonoBehaviour
 {
 	[SerializeField]
 	private float _moveTime = 1f;

@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|c:\\users\\user\\source\\repos\\coroutinehomework\\assets\\homework\\scripts\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\homework\\scripts\\mover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|c:\\users\\user\\source\\repos\\coroutinehomework\\assets\\scripts\\mover2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mover2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|C:\\Users\\user\\source\\repos\\CoroutineHomework\\assets\\homework\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\homework\\scripts\\rotator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|C:\\Users\\user\\source\\repos\\CoroutineHomework\\assets\\homework\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\homework\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|C:\\Users\\user\\source\\repos\\CoroutineHomework\\assets\\homework\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\homework\\scripts\\ball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|C:\\Users\\user\\source\\repos\\CoroutineHomework\\assets\\homework\\scripts\\gates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A8F723-26B0-9BDA-30F3-D348DECE4578}|Assembly-CSharp.csproj|solutionrelative:assets\\homework\\scripts\\gates.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Mover2.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Scripts\\Mover2.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Mover2.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Scripts\\Mover2.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Mover2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T19:26:41.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Mover.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Mover.cs",
+              "RelativeDocumentMoniker": "Assets\\Homework\\Scripts\\Mover.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Mover.cs",
+              "RelativeToolTip": "Assets\\Homework\\Scripts\\Mover.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAuwC0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T18:04:19.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Rotator.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Rotator.cs",
+              "RelativeDocumentMoniker": "Assets\\Homework\\Scripts\\Rotator.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Rotator.cs",
+              "RelativeToolTip": "Assets\\Homework\\Scripts\\Rotator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:53:59.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Player.cs",
+              "RelativeDocumentMoniker": "Assets\\Homework\\Scripts\\Player.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Player.cs",
+              "RelativeToolTip": "Assets\\Homework\\Scripts\\Player.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwCMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:41:16.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Ball.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Ball.cs",
+              "RelativeDocumentMoniker": "Assets\\Homework\\Scripts\\Ball.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Ball.cs",
+              "RelativeToolTip": "Assets\\Homework\\Scripts\\Ball.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:40:37.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Gates.cs",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Gates.cs",
+              "RelativeDocumentMoniker": "Assets\\Homework\\Scripts\\Gates.cs",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\CoroutineHomework\\Assets\\Homework\\Scripts\\Gates.cs",
+              "RelativeToolTip": "Assets\\Homework\\Scripts\\Gates.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T17:40:34.344Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
