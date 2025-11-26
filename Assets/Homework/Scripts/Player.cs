@@ -1,53 +1,36 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Netologia.Homework
+public class Player : MonoBehaviour
 {
-	public class Player : MonoBehaviour
-	{
-		private bool _ready;
-		private Rigidbody _ball;
-		
-		[SerializeField]
-		private Rigidbody _ballPrefab;
-		[SerializeField]
-		private float _startVelocity;
-		[SerializeField]
-		private float _lifetime;
+    [SerializeField] private GameObject ballPrefab;
+    [SerializeField] private float shootForce = 10f;
 
-		[SerializeField]
-		private float _respawnDelay;
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ShootBall();
+        }
+    }
 
-		private void Update()
-		{
-			if (!_ready) return;
-			if (Input.GetKey(KeyCode.Space))
-			{
-				StartCoroutine(Reloader());
-				_ball.isKinematic = false;
-				_ball.transform.parent = null;
-				_ball.velocity = transform.forward * _startVelocity;
-				Destroy(_ball.gameObject, _lifetime);
-			}
-		}
+    private void ShootBall()
+    {
+        if (ballPrefab != null)
+        {
+            // Создаём мяч перед игроком
+            Vector3 spawnPosition = transform.position + transform.forward * 2f;
+            GameObject ball = Instantiate(ballPrefab, spawnPosition, Quaternion.identity);
 
-		private IEnumerator Reloader()
-		{
-			_ready = false;
-			yield return new WaitForSeconds(_respawnDelay);
-			Spawn();
-		}
-
-		private void Spawn()
-		{
-			_ball = Instantiate(_ballPrefab, transform);
-			_ball.isKinematic = true;
-			_ready = true;
-		}
-
-		private void Start()
-		{
-			Spawn();
-		}
-	}
+            // Добавляем силу вперед
+            Rigidbody ballRigidbody = ball.GetComponent<Rigidbody>();
+            if (ballRigidbody != null)
+            {
+                ballRigidbody.AddForce(transform.forward * shootForce, ForceMode.Impulse);
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Ball prefab is not assigned to Player!");
+        }
+    }
 }
