@@ -3,32 +3,37 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private Vector3 _start;
-    [SerializeField] private Vector3 _end;
-    [SerializeField] private float _speed = 2f;
+    [SerializeField] private float _leftBound = -14f;
+    [SerializeField] private float _rightBound = 14f;
+    [SerializeField] private float _speed = 3f;
     [SerializeField] private float _delay = 1f;
 
     private Rigidbody _rigidbody;
+    private bool _movingRight = true;
 
     private IEnumerator Start()
     {
         _rigidbody = GetComponent<Rigidbody>();
+        _rigidbody.isKinematic = true;
+
+        // Начинаем с левой границы
+        _rigidbody.position = new Vector3(_leftBound, _rigidbody.position.y, _rigidbody.position.z);
+
         yield return new WaitForFixedUpdate();
 
         while (true)
         {
-            yield return StartCoroutine(MoveToPosition(_start, _end));
-            yield return StartCoroutine(MoveToPosition(_end, _start));
-            
+            float targetX = _movingRight ? _rightBound : _leftBound;
+            yield return StartCoroutine(MoveToX(targetX));
+            yield return new WaitForSeconds(_delay);
+            _movingRight = !_movingRight;
         }
     }
 
-    private IEnumerator MoveToPosition(Vector3 localFrom, Vector3 localTo)
+    private IEnumerator MoveToX(float targetX)
     {
-        Vector3 worldFrom = transform.TransformPoint(localFrom);
-        Vector3 worldTo = transform.TransformPoint(localTo);
-
-        float distance = Vector3.Distance(worldFrom, worldTo);
+        float startX = _rigidbody.position.x;
+        float distance = Mathf.Abs(targetX - startX);
         float duration = distance / _speed;
         float elapsed = 0f;
 
@@ -36,23 +41,29 @@ public class Mover : MonoBehaviour
         {
             elapsed += Time.fixedDeltaTime;
             float t = elapsed / duration;
+            float newX = Mathf.Lerp(startX, targetX, t);
 
-            Vector3 newPosition = Vector3.Lerp(worldFrom, worldTo, t);
+            Vector3 newPosition = _rigidbody.position;
+            newPosition.x = newX;
             _rigidbody.MovePosition(newPosition);
+
             yield return new WaitForFixedUpdate();
         }
 
-        _rigidbody.MovePosition(worldTo);
+        // Финальная позиция
+        Vector3 finalPosition = _rigidbody.position;
+        finalPosition.x = targetX;
+        _rigidbody.MovePosition(finalPosition);
     }
 
-    // Визуализация точек в редакторе
     private void OnDrawGizmos()
     {
+        Vector3 pos = transform.position;
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.TransformPoint(_start), 0.3f);
+        Gizmos.DrawWireSphere(new Vector3(_leftBound, pos.y, pos.z), 0.5f);
         Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(transform.TransformPoint(_end), 0.3f);
+        Gizmos.DrawWireSphere(new Vector3(_rightBound, pos.y, pos.z), 0.5f);
         Gizmos.color = Color.yellow;
-        Gizmos.DrawLine(transform.TransformPoint(_start), transform.TransformPoint(_end));
+        Gizmos.DrawLine(new Vector3(_leftBound, pos.y, pos.z), new Vector3(_rightBound, pos.y, pos.z));
     }
 }
